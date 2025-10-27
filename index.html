@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>CelkaConfigs — ЦелкаКонфигс</title>
-  <meta name="description" content="CelkaConfigs — простой сайт с конфигами и комментариями (Giscus)">
+  <meta name="description" content="CelkaConfigs — простой сайт с конфигами и комментариями (Telegram)">
 
   <style>
     :root{
@@ -38,6 +38,10 @@
 
     .giscus-wrap{margin-top:14px;padding-top:12px;border-top:1px dashed rgba(255,255,255,0.03)}
 
+    /* Telegram Comments Styling */
+    .telegram-comments{text-align:center;padding:20px 0;}
+    .telegram-comments .small{display:block;margin-bottom:10px;color:var(--muted);}
+
     footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
 
     @media (max-width:600px){.wrap{padding:12px}}
@@ -49,7 +53,7 @@
       <div class="logo">CC</div>
       <div>
         <h1>CelkaConfigs</h1>
-        <p class="lead">Простой репозиторий конфигов — скачивай, комментируй, оставляй фидбек через Giscus (GitHub).</p>
+        <p class="lead">Простой репозиторий конфигов — скачивай, комментируй через Telegram.</p>
       </div>
     </header>
 
@@ -79,21 +83,16 @@
           </div>
 
           <div class="giscus-wrap">
-            <script src="https://giscus.app/client.js"
-                    data-repo="di4scordix/CelkaConfigs"
-                    data-repo-id=""
-                    data-category="General"
-                    data-category-id=""
-                    data-mapping="specific"
-                    data-term="default.cfg"
-                    data-reactions-enabled="1"
-                    data-emit-metadata="0"
-                    data-input-position="bottom"
-                    data-theme="transparent_dark"
-                    data-lang="ru"
-                    crossorigin="anonymous"
-                    async>
-            </script>
+            <!-- Telegram Comments Widget -->
+            <div class="telegram-comments">
+              <div class="small">💬 Комментарии через Telegram</div>
+              <script async src="https://comments.app/js/widget.js?3" 
+                      data-comments-app-website="di4scordix-CelkaConfigs" 
+                      data-limit="10" 
+                      data-dark="1" 
+                      data-color="7DD3FC">
+              </script>
+            </div>
           </div>
 
         </div>
